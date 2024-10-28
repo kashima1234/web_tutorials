@@ -4,7 +4,9 @@
 لتنفيذ هذا العمل المخبري، ستحتاج إلى [VS Code](https://code.visualstudio.com) أو [PyCharm Professional](https://www.jetbrains.com/pycharm/download/).
 
 ## إنشاء المشروع محليًا
-مثال لـ PyCharm...:`File -> New Project`في قائمة **...New Project** اختر **Django**، حدد مسار المشروع في **Location** وأدخل اسم التطبيق في **Application name**.
+مثال لـ PyCharm:
+اذهب إلى  ...File -> New Project
+في قائمة ...،New Project اختر Django، ثم حدد مسار المشروع في Location وأدخل اسم التطبيق في Application name.
 
 ![إنشاء المشروع](assets/1.png)
 
