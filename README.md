@@ -4,7 +4,7 @@
 لتنفيذ هذا العمل المخبري، ستحتاج إلى [VS Code](https://code.visualstudio.com) أو [PyCharm Professional](https://www.jetbrains.com/pycharm/download/).
 
 ## إنشاء المشروع محليًا
-مثال لـ PyCharm:`File -> New Project...`في قائمة **New Project...** اختر **Django**، حدد مسار المشروع في **Location** وأدخل اسم التطبيق في **Application name**.
+مثال لـ PyCharm...:`File -> New Project`في قائمة **...New Project** اختر **Django**، حدد مسار المشروع في **Location** وأدخل اسم التطبيق في **Application name**.
 
 ![إنشاء المشروع](assets/1.png)
 
@@ -19,10 +19,10 @@
 
 ![الاتصال بالمضيف البعيد](assets/15.png)
 
-- اختر **Connect to Host...**
+- اختر **...Connect to Host**
 
 ### كيفية معرفة IP الجهاز الافتراضي
-أدخل الأمر **ifconfig** على الجهاز الافتراضي، وابحث عن واجهة Ethernet، في هذه الحالة - enp0s3، وراجع IP في السطر الثاني مقابل inet.يرجى ملاحظة أن نوع الاتصال في إعدادات "الشبكة" للجهاز الافتراضي يجب أن يكون مضبوطاً على "الجسر الشبكي" (Bridge Network).
+أدخل الأمر **ifconfig** على الجهاز الافتراضي، وابحث عن واجهة ،Ethernet في هذه الحالة - enp0s3، وراجع IP في السطر الثاني مقابل .inet يرجى ملاحظة أن نوع الاتصال في إعدادات "الشبكة" للجهاز الافتراضي يجب أن يكون مضبوطاً على "الجسر الشبكي" (Bridge Network).
 
 ![IP](assets/27.png)
 
@@ -54,7 +54,7 @@
 
 ![تثبيت Django](assets/22.png)
 
-- أنشئ المشروع باستخدام الأمر `django-admin startproject <your_project_name> .`
+- أنشئ المشروع باستخدام الأمر `<django-admin startproject <your_project_name> .`
 
 ![إنشاء مشروع Django](assets/23.png)
 
@@ -437,7 +437,7 @@ def GetOrder(request, id):
  <li><a href="{% url 'order_url' element.id %}">{{ element.title }}</a> </li>
 ```
 
-**with** - يسمح بتغيير السياق. أي أنه في القالب `order_element.html` ستكون متاحة ليس فقط *order* و *orders*، ولكن أيضًا *element*.
+مع "with" يسمح بتغيير السياق. أي في قالب order_element.html، لن يكون الوصول متاحاً فقط لـ order وorders، ولكن أيضًا لـ element.
 
 ## إضافة الملفات الثابتة
 
