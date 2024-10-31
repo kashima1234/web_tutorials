@@ -79,14 +79,22 @@
 
 هيكل المشروع
 في مجلد المشروع bmstu:
+<div dir="rtl">
+    settings.py - إعدادات المشروع، ويمكن أن يحتوي المشروع على عدة تطبيقات.
+</div>
+<div dir="rtl">
+       urls.py - توجيه الروابط إلى المعالجات (views).    
+</div>
 
-في settings.py - يحتوي على إعدادات المشروع، حيث يمكن أن يتضمن المشروع عدة تطبيقات.
 
-في urls.py يربط عناوين URL بالمعالجات (views).
 
 في المجلد bmstu_lab: 
-لدينا views يحتوي على معالجات التطبيق  
-templates - مجلد القوالب (ملفات HTML).
+<div dir="rtl" style="direction: rtl; text-align: right;">
+  <code>views</code> - معالجة التطبيق
+</div>
+<div dir ="rtl">
+    templates - مجلد القوالب (ملفات HTML).
+</div>
 
 
 
@@ -288,11 +296,9 @@ def hello(request):
 
 
 ![Привет студенты!](assets/9.png)
-
-باستخدام For  يتم تكرار القائمة، ويمكن الوصول إلى العناصر من خلال المتغير المُنشأ، في هذه الحالة var.
-
-
-
+<div dir = "rtl">
+     For  تقوم  بتكرار القائمة، ويمكن الوصول إلى العناصر من خلال المتغير المُنشأ، في هذه الحالة var.
+</div>
 
 
 
@@ -322,11 +328,20 @@ def hello(request):
 ![Привет студенты!](assets/10.png)
 
  في علامة **if** يمكن استخدام:
+ <div dir = "rtl">
 - and
-- or
-- not
-- مشغلات المقارنة
+ </div>
+ <div dir = "rtl">
+ - or
+ </div>
+ <div dir = "rtl">
+ - not
+ </div>
+ 
+-مشغلات المقارنة
+ <div dir = "rtl">
 - in (للتحقق مما إذا كانت القيمة موجودة في القائمة)
+ </div>
 
 
 ## وراثة القوالب
@@ -453,13 +468,14 @@ def GetOrder(request, id):
 ```html
  <li><a href="{% url 'order_url' element.id %}">{{ element.title }}</a> </li>
 ```
-
-مع "with" يسمح بتغيير السياق. أي في قالب order_element.html، لن يكون الوصول متاحاً فقط لـ order وorders، ولكن أيضًا لـ element.
+<div dir="rtl">
+with يسمح بتغيير السياق. أي في قالب order_element.html، لن يكون الوصول متاحاً فقط لـ order وorders، ولكن أيضًا لـ element.
+</div>
 
 ## إضافة الملفات الثابتة
 
-
 في `settings.py`، يتم تحديد المسار إلى الملفات الثابتة.
+
 ```python
 STATIC_URL = '/bmstu_lab/static/'
 ```
